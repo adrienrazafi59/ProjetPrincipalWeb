@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "FontILike";
+    src: url("./AntonSC-Regular.ttf");
+}
+
+header {
+    color: white;
+    background-color: black;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: blanchedalmond;
+    /*-webkit-text-stroke: 0.5px black;*/
+    /*background-image: url("../asset/galaxy.jpg");*/
+    font-family: "FontILike", serif;
+}
+
+p {
+    background: -webkit-linear-gradient(#ac4949, #48559e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
