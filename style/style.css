@@ -3,10 +3,27 @@
     src: url("./AntonSC-Regular.ttf");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     color: white;
-    background-color: black;
+    background-color: rgb(90, 53, 22);
+    height: 17vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 5px;
+    border: #000000c5 solid 2px;
 }
+
+h1,h2 {
+    width: fit-content;
+    }
 
 body {
     font-size: 1.5rem;
@@ -20,4 +37,39 @@ p {
     background: -webkit-linear-gradient(#ac4949, #48559e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#logoHeader {
+    height: 100%;
+    
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-right: 15vw;
+}
+
+article {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.733);
+    padding: 10px;
+    border: #ac4949 solid 3px;
+    border-radius: 5px;
+    margin: 2vh;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divIMG {
+    height: 50vh;
+    background-image: url(../asset/library.png);
 }
