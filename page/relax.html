@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <script type="module" src="../script/test.js"></script>
+    <script type="module" src="../script/nav.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Espace Détente</title>
@@ -20,7 +21,7 @@
 
     </header>
 
-    <nav>
+    <nav id="navigator">
         <a class="button" href="../index.html">Accueil</a>
         <a class="button" href="./library.html">Bibliothèque</a>
         <a class="button" href="./relax.html">Espace Détente</a>
@@ -28,10 +29,29 @@
         <a class="button" href="./forum.html">Forum</a>
     </nav>
 
+    <div id="trigger"></div>
+
     <main>
-        <article id="result">
-            
-        </article>
+        <article>
+        <div>
+            <label for="numA">Premier nombre<input type="number" name="numA" id="numA"></label>
+        </div>
+
+        <div>
+            <label for="numB">Deuxième nombre<input type="number" name="numB" id="numB"></label>
+        </div>
+
+        <div>
+            <input type="submit" value="Calculer" id="LOGHEAD">
+        </div>
+        <div id="result">
+
+           
+
+        </div>
+    </article>
+         
+        
     </main>
 </body>
 </html>

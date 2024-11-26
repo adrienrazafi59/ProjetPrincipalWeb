@@ -19,34 +19,36 @@
 //console.log(a-b, a+b, a*b, a/b, a%b);
 
 let resultHTML = document.querySelector('#result');
-console.log(resultHTML);
+let LOGHEAD = document.querySelector(`#LOGHEAD`);
 
-let varOne = parseInt(prompt("Entrer un chiffre"));
 
-while (isNaN(varOne)){
-    console.log("Il faut entrer un nombre wallah");
-    varOne = parseInt(prompt("Entrer un chiffre"));
+
+function CalculatorZ(){
+    let varOne = parseInt(numA.value);
+    let varTwo = parseInt(numB.value);
+    
+
+    if (isNaN(varOne) || isNaN(varTwo)){
+        let msgErreurA = "<p>IL FAUT ENTRER DES CHIFFRES </p>";
+        resultHTML.innerHTML = msgErreurA;
+        return;
+    }
+
+
+
+    let result = varOne + varTwo;
+
+    let msgAdd = `<p>Le résultat de l'addition des deux nombres est ${result}</p>`;
+
+    result = varOne/varTwo;
+    let msgDiv = `<p>Le résultat de la division des deux nombres est ${result}</p>`;
+
+    result = varOne*varTwo;
+    let msgMul = `<p>Le résultat de la multiplication des deux nombres est ${result}</p>`;
+
+    resultHTML.innerHTML = msgAdd;
+    resultHTML.innerHTML += msgDiv;
+    resultHTML.innerHTML += msgMul;
 }
-console.log(varOne);
 
-let varTwo = parseInt(prompt("Entrer un chiffre"));
-
-while (isNaN(varTwo)){
-    console.log("Il faut entrer un nombre wallah");
-    varTwo = parseInt(prompt("Entrer un chiffre"));
-}
-console.log(varTwo);
-
-let result = varOne + varTwo;
-
-let msgAdd = `<p>Le résultat de l'addition des deux nombres est ${result}</p>`;
-
-result = varOne/varTwo;
-let msgDiv = `<p>Le résultat de la division des deux nombres est ${result}</p>`;
-
-result = varOne*varTwo;
-let msgMul = `<p>Le résultat de la multiplication des deux nombres est ${result}</p>`;
-
-resultHTML.innerHTML = msgAdd;
-resultHTML.innerHTML += msgDiv;
-resultHTML.innerHTML += msgMul;
+LOGHEAD.addEventListener("click", CalculatorZ);
